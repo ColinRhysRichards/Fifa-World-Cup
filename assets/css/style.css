@@ -1,0 +1,30 @@
+body {
+    
+    background-image: url(../images/40561a7121f15bf.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+h4, h5 {
+    padding: 10px;
+}
+
+.highlight-videos {
+    display: block;
+    margin: auto;
+    background-color: whitesmoke;
+    opacity: 10;
+}
+
+iframe {
+    padding: 20px;
+    display: block;
+    margin: 20px auto;
+}
