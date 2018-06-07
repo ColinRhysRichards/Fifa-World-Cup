@@ -2,6 +2,13 @@ body {
     
     background-image: url(../images/40561a7121f15bf.jpg);
     
+    /* background-image: url(../images/Fifa-World-Cup-2018-Wallpapers.jpg);
+    background-image: url(../images/gettyimages-883495912.jpg);
+    background-image: url(../images/main.jpg);
+    background-image: url(../images/Wallpaper-World-Cup-Russia-Desktop.jpg); */
+    background-image: url(../images/World-Cup-2018-Wallpaper-HD.jpg);
+    
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -31,4 +38,14 @@ iframe {
 
 .timeCard {
     width: 45%;
+    float: left;
+    margin: 5px;
+}
+.container {
+    margin-left: auto;
+    margin-left: auto;
+}
+.timeBox {
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
