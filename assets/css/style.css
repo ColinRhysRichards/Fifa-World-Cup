@@ -28,3 +28,7 @@ iframe {
     display: block;
     margin: 20px auto;
 }
+
+.timeCard {
+    width: 45%;
+}
