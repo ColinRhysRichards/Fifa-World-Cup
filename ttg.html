@@ -9,6 +9,7 @@
         crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster|Roboto" rel="stylesheet">
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5b1a00958e56ee0011c804ac&product=inline-share-buttons"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
@@ -21,7 +22,7 @@
     <nav>
         <div class="row">
             <div class="col-lg-3">
-                <h4>World Cup 2018</h4>
+                <h4 class="worldCup">World Cup 2018</h4>
             </div>
             <div class="col-lg-2 text-center">
                 <a class="Highlights" href="index.html">Highlights</a>
@@ -47,7 +48,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="meme">
+                    <div id="meme">
                         <img id="meme4User" src="assets/images/wonka.jpg" alt="Wonka" style="width: 100%;">
                         <span class="top text-center">You hope america wins the world cup this year?</span>
                         <span class="bottom text-center"></span>
@@ -64,6 +65,7 @@
                             <input type="text" oninput="bottomText4Meme()" class="form-control" id="bottomInput" placeholder="Another input">
                         </div>
                     </form>
+                    <button id="generate">Generate</button>
                     <div class="sharethis-inline-share-buttons"></div>
                 </div>
             </div>
@@ -71,6 +73,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="memeImagesHere"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="memeCreations"></div>
+                    <button id="Save">Save</button>
                 </div>
             </div>
         </div>
