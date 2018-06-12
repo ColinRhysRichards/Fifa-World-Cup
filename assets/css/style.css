@@ -16,11 +16,30 @@ body {
 }
 
 nav {
-    background-color: lightblue;
+    background-color: rgb(101,160,70);
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    color:rgb(43, 41, 136);
+}
+.nav-link { margin-right: 23px;
+    padding: 0px, 0px, 0px, 0px;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+
 }
 
 h4, a {
     padding: 10px;
+}
+
+.btn {color: #030303;
+    background-color: transparent;
+    background-image: none;
+    border-color: #212121;
 }
 
 .highlight-videos {
