@@ -17,6 +17,7 @@ body {
 
 nav {
     background-color: rgb(101,160,70);
+  height: 50px;
 }
 
 .navbar-brand {
@@ -30,10 +31,23 @@ nav {
     font-size: 20px;
     color: rgb(238, 238, 238);
 
+  h4 {
+    position: relative;
+    top: 7px;
+    margin-left: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 900;
 }
 
-h4, a {
+a {
+    position: relative;
+    top: 15px;
     padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 20px;
+    
 }
 
 .btn {color: #030303;
@@ -73,13 +87,13 @@ iframe {
     padding: 20px;
 }
 
-.meme {
+#meme {
     position: relative;
     display: block;
     width: 400px;
 }
 
-span {
+.top, .bottom {
     position: absolute; 
     left: 0;
     right: 0; 
@@ -133,7 +147,8 @@ span {
 
 
 
-.memeImagesHere img {
+.memeImagesHere img, 
+#memeCreations canvas {
     display: inline-block;
     height: 190px;
     margin: 5px;
@@ -143,6 +158,7 @@ span {
     font-size: 30px;
     margin: 10px;
 }
+
 
 #results{
     display: inline;
@@ -159,5 +175,43 @@ span {
 
 
 
+.groupTable {
+    background-color: lightgray;
+    border: solid 6px rgb(101,160,70);
+    padding: 30px;
+    border-radius: 6px;
 
+
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+th {
+    font-weight: 550;
+    font-size: 20px;
+    padding: 15px;
+    border-bottom: 2px solid gray;
+    width: 20%;
+}
+
+td {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.marginTop {
+    margin-top: 50px;
+}
+
+.team {
+    width: 50%;
+}
+
+.width5 {
+    width: 5%
+}
 
