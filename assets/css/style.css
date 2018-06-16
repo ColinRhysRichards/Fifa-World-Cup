@@ -250,3 +250,8 @@ canvas {
     height: 250px;
 }
 
+.shareButton {
+    position: relative;
+    bottom: 0;
+}
+
