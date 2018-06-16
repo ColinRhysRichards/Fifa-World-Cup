@@ -138,21 +138,6 @@ iframe {
     height: 50px;
 }
 
-.memeImagesHere {
-    margin: 15px auto;
-    height: 200px;
-    white-space: nowrap;
-    overflow: auto;
-}
-
-
-
-.memeImagesHere img, 
-#memeCreations canvas {
-    display: inline-block;
-    height: 190px;
-    margin: 5px;
-}
 
 .largeFont {
     font-size: 30px;
@@ -213,5 +198,16 @@ td {
 
 .width5 {
     width: 5%
+}
+
+canvas {
+    
+    width: 400px;
+    height: 500px;
+}
+
+.memeGenerator img {
+    width: 200px;
+    height: 250px;
 }
 

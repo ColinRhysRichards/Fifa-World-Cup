@@ -56,27 +56,11 @@ function bottomText4Meme() {
 
 $(document).ready(function () {
 
-    var memeImages = ["assets/images/wonka.jpg", "assets/images/oneRing.png", "assets/images/grumpycat.jpeg", "assets/images/baby.png", "assets/images/matrix.jpg", "assets/images/cheers.jpg", "assets/images/spicebae.gif", "assets/images/ronaldo.jpg", "assets/images/caprio.jpeg", "assets/images/ron.jpg", "assets/images/kick2thenutz.jpg", "assets/images/getout.jpg"];
-
-    $(".memeImagesHere").on("click", "img", function () {
-        var image = $(this).attr("src");
-
-        $('#meme4User').attr("src", image);
-    })
-
-    memeImages.forEach(function (image) {
-
-        var newImage = `<img src="${image}">`;
-
-        $(".memeImagesHere").append(newImage);
-    })
-
     $("#generate").on("click", function () {
-        
+
 
         html2canvas(document.querySelector("#meme"), {
-            allowTaint: false,
-            useCORS: false
+
         }).then(canvas => {
 
             var image = canvas.toDataURL('image/png');
@@ -87,6 +71,15 @@ $(document).ready(function () {
         });
 
     })
+
+    function redrawMeme(image) {
+        var canvas = document.querySelector('canvas');
+        var context = canvas.getContext("2d");
+        if (image != null) {
+            context.clearRect(0, 0, canvas.width, canvas.height)
+            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+        }
+    }
 
     function handleFileSelect(evt) {
         var canvasWidth = 500;
@@ -102,8 +95,7 @@ $(document).ready(function () {
             image.onload = function () {
 
                 window.imageSrc = this;
-                console.log(window.imageSrc);
-                $('#meme4User').attr("src", window.imageSrc);
+                redrawMeme(window.imageSrc, null, null);
             }
 
             // Set image data to background image.
@@ -113,12 +105,17 @@ $(document).ready(function () {
         reader.readAsDataURL(file)
     }
 
-    // $("#file").on('change', function (file) {
-    //     var newFile = file.target.files[0];
-    //     console.log(newFile);
-    //     $('#meme4User').attr('src', newFile);
-    // })
+    document.getElementById('file').addEventListener('change', handleFileSelect, false);
 
-    // $("#Save").on("click", handleFileSelect, false);
+    // function saveFile() {
+    //     console.log("save");
+    //     var image = window.open($(".memeCreations img"));
+    //     // var image = document.querySelector('canvas').toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+    //     window.location.href=image;
+
+    // }
+    
+
+    // $("#Save").on("click", saveFile, false);
 
 })
