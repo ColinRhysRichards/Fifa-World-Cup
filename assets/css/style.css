@@ -79,7 +79,7 @@ iframe {
     width: 400px;
 }
 
-span {
+top, bottom {
     position: absolute; 
     left: 0;
     right: 0; 
