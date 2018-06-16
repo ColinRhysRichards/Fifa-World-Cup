@@ -72,30 +72,53 @@ $(document).ready(function () {
     })
 
     $("#generate").on("click", function () {
+        
+
         html2canvas(document.querySelector("#meme"), {
             allowTaint: false,
             useCORS: false
         }).then(canvas => {
-            console.log(canvas);
-            var img = new Image,
-                canvas = document.createElement("canvas"),
-                ctx = canvas.getContext("2d"),
-                src = "http://example.com/image"; // insert image url here
 
-            img.crossOrigin = "Anonymous";
+            var image = canvas.toDataURL('image/png');
 
-            var img = canvas.toDataURL();
-            // console.log(img);
-            // var newImage = `<img src="${img}" alt="">`;
+            var newImage = `<img src="${image}">`;
 
-            $("#memeCreations").append(canvas);
-
+            $("#memeCreations").append(newImage);
         });
+
     })
 
-    // $("#Save").on("click", function() {
-    //     var newImage = $("canvas")[0].toDataURL("image/png");
-    //     console.log(newImage);
+    function handleFileSelect(evt) {
+        var canvasWidth = 500;
+        var canvasHeight = 500;
+        var file = evt.target.files[0];
+
+        var reader = new FileReader();
+        reader.onload = function (fileObject) {
+            var data = fileObject.target.result;
+
+            // Create an image object
+            var image = new Image();
+            image.onload = function () {
+
+                window.imageSrc = this;
+                console.log(window.imageSrc);
+                $('#meme4User').attr("src", window.imageSrc);
+            }
+
+            // Set image data to background image.
+            image.src = data;
+            console.log(fileObject.target.result);
+        };
+        reader.readAsDataURL(file)
+    }
+
+    // $("#file").on('change', function (file) {
+    //     var newFile = file.target.files[0];
+    //     console.log(newFile);
+    //     $('#meme4User').attr('src', newFile);
     // })
+
+    // $("#Save").on("click", handleFileSelect, false);
 
 })
