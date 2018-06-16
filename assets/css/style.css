@@ -28,6 +28,24 @@ nav {
     position: relative;
     top: 0;
 }
+
+.ttg {
+
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    color:rgb(219, 76, 41);
+    padding-bottom: 20px;
+    position: relative;
+    top: 0;
+}
+
+label {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    color:rgb(219, 76, 41);
+    margin-bottom: 10px;
+    
+}
 .nav-link { margin-right: 23px;
     padding: 0px, 0px, 0px, 0px;
     font-family: 'Roboto', sans-serif;;
@@ -89,6 +107,7 @@ iframe {
 .memeGenerator {
     margin: auto;
     background-color: whitesmoke;
+    border: solid 6px rgb(101,160,70);
     border-radius: 6px;
     padding: 20px;
 }
