@@ -17,19 +17,24 @@ body {
 
 nav {
     background-color: rgb(101,160,70);
-  height: 50px;
+  height: 60px;
 }
 
 .navbar-brand {
     font-family: 'Lobster', cursive;
     font-size: 35px;
     color:rgb(219, 76, 41);
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
 }
 .nav-link { margin-right: 23px;
     padding: 0px, 0px, 0px, 0px;
     font-family: 'Roboto', sans-serif;;
     font-size: 20px;
     color: rgb(238, 238, 238);
+    position: relative;
+    top: 0;
 }
 
   h4 {
@@ -213,5 +218,16 @@ td {
 
 .width5 {
     width: 5%
+}
+
+canvas {
+    
+    width: 400px;
+    height: 500px;
+}
+
+.memeGenerator img {
+    width: 200px;
+    height: 250px;
 }
 
