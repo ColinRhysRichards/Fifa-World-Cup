@@ -16,11 +16,23 @@ body {
 }
 
 nav {
-    background-color: rgb(190, 5, 5);
-    height: 50px;
+    background-color: rgb(101,160,70);
+  height: 50px;
 }
 
-h4 {
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    color:rgb(219, 76, 41);
+}
+.nav-link { margin-right: 23px;
+    padding: 0px, 0px, 0px, 0px;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+}
+
+  h4 {
     position: relative;
     top: 7px;
     margin-left: 30px;
@@ -37,6 +49,12 @@ a {
     color: black;
     font-size: 20px;
     
+}
+
+.btn {color: #030303;
+    background-color: transparent;
+    background-image: none;
+    border-color: #212121;
 }
 
 .highlight-videos {
@@ -121,18 +139,48 @@ iframe {
     height: 50px;
 }
 
+.memeImagesHere {
+    margin: 15px auto;
+    height: 200px;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+
+
+.memeImagesHere img, 
+#memeCreations canvas {
+    display: inline-block;
+    height: 190px;
+    margin: 5px;
+}
 
 .largeFont {
     font-size: 30px;
     margin: 10px;
 }
 
+
+#results{
+    display: inline;
+}
+
+.marginTop .container {
+    background-color: rgba(228, 228, 228, .4);
+    margin-top: 30px;
+    border: solid 4px;
+    border-color: rgb(252, 248, 200);
+    border-radius: 4px;
+}
+
+
+
+
 .groupTable {
     background-color: lightgray;
     border: solid 6px rgb(101,160,70);
     padding: 30px;
     border-radius: 6px;
-
 }
 
 h1 {
@@ -164,16 +212,5 @@ td {
 
 .width5 {
     width: 5%
-}
-
-canvas {
-    
-    width: 400px;
-    height: 500px;
-}
-
-.memeGenerator img {
-    width: 200px;
-    height: 250px;
 }
 
