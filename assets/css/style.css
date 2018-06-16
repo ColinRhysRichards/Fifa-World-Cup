@@ -22,7 +22,7 @@ nav {
 .navbar-brand {
     font-family: 'Lobster', cursive;
     font-size: 35px;
-    color:rgb(43, 41, 136);
+    color:rgb(219, 76, 41);
 }
 .nav-link { margin-right: 23px;
     padding: 0px, 0px, 0px, 0px;
@@ -143,6 +143,20 @@ span {
     font-size: 30px;
     margin: 10px;
 }
+
+#results{
+    display: inline;
+}
+
+.container {
+    background-color: rgba(228, 228, 228, .4);
+    margin-top: 30px;
+    border: solid 4px;
+    border-color: rgb(252, 248, 200);
+    border-radius: 4px;
+}
+
+
 
 
 
